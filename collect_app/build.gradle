@@ -180,6 +180,13 @@ allprojects {
     }
 }
 
+repositories {
+    maven {
+        url "https://jitpack.io"
+    }
+}
+
+
 dependencies {
     implementation fileTree(dir: 'libs', include: '*.jar')
     implementation "com.android.support:support-v13:${rootProject.supportLibraryVersion}"
@@ -268,6 +275,10 @@ dependencies {
     implementation "com.trello.rxlifecycle2:rxlifecycle:${rootProject.rxLifecycleVersion}"
     implementation "com.trello.rxlifecycle2:rxlifecycle-android:${rootProject.rxLifecycleVersion}"
     implementation "com.trello.rxlifecycle2:rxlifecycle-android-lifecycle:${rootProject.rxLifecycleVersion}"
+
+
+    //dashboard
+    implementation 'com.github.kimarudg:Android-Dashboard-Layout-Library:v1.0.1'
 
     // Makes binding to Views easy:
     implementation "com.jakewharton:butterknife:8.8.1"

@@ -208,7 +208,7 @@ public class Collect extends Application implements HasActivityInjector {
     public String getVersionedAppName() {
         String versionName = BuildConfig.VERSION_NAME;
         versionName = " " + versionName.replaceFirst("-", "\n");
-        return getString(R.string.app_name) + versionName;
+        return getString(R.string.app_name);
     }
 
     public boolean isNetworkAvailable() {

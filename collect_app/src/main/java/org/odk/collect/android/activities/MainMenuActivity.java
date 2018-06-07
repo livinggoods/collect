@@ -112,7 +112,8 @@ public class MainMenuActivity extends CollectAbstractActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_menu);
+        //setContentView(R.layout.main_menu);
+        setContentView(R.layout.main_menu_dashboard);
         initToolbar();
 
         // enter data button. expects a result.

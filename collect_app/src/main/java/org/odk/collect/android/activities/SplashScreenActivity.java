@@ -106,7 +106,7 @@ public class SplashScreenActivity extends Activity {
 
         boolean firstRun = sharedPreferences.getBoolean(PreferenceKeys.KEY_FIRST_RUN, true);
         boolean showSplash =
-                sharedPreferences.getBoolean(PreferenceKeys.KEY_SHOW_SPLASH, false);
+                sharedPreferences.getBoolean(PreferenceKeys.KEY_SHOW_SPLASH, true);
         String splashPath = (String) GeneralSharedPreferences.getInstance().get(KEY_SPLASH_PATH);
 
         // if you've increased version code, then update the version number and set firstRun to true
