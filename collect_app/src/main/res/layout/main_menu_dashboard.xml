@@ -51,40 +51,40 @@
             android:gravity="center"
             android:paddingBottom="10dp"
             android:paddingTop="1dp"
-            android:text="@string/main_menu_details"
+            android:text="@string/slogan"
             android:textColor="?primaryTextColor"
             android:textSize="17sp"/>
 
         <com.gadiness.kimarudg.DashboardLayout
             xmlns:android="http://schemas.android.com/apk/res/android"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginLeft="0dp"
             android:layout_marginRight="0dp">
 
             <Button android:id="@+id/enter_data"
                 style="@style/DashboardButton"
-                android:drawableTop="@drawable/ic_assignment" />
+                android:drawableTop="@drawable/enroll" />
 
             <Button android:id="@+id/review_data"
                 style="@style/DashboardButton"
-                android:drawableTop="@drawable/ic_edit_black_24dp" />
+                android:drawableTop="@drawable/edit" />
 
             <Button android:id="@+id/send_data"
                 style="@style/DashboardButton"
-                android:drawableTop="@drawable/ic_send_black_24dp" />
+                android:drawableTop="@drawable/send_form" />
 
             <Button android:id="@+id/view_sent_forms"
                 style="@style/DashboardButton"
-                android:drawableTop="@drawable/ic_cloud" />
+                android:drawableTop="@drawable/sent_forms" />
 
             <Button android:id="@+id/get_forms"
                 style="@style/DashboardButton"
-                android:drawableTop="@drawable/ic_blue_file_download" />
+                android:drawableTop="@drawable/download" />
 
             <Button android:id="@+id/manage_forms"
                 style="@style/DashboardButton"
-                android:drawableTop="@drawable/ic_phonelink_setup" />
+                android:drawableTop="@drawable/delete" />
 
         </com.gadiness.kimarudg.DashboardLayout>
 

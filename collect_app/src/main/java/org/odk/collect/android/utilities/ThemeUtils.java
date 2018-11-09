@@ -37,7 +37,7 @@ public final class ThemeUtils {
 
     @StyleRes
     public int getAppTheme() {
-        return isDarkTheme() ? R.style.DarkAppTheme : R.style.LightAppTheme;
+        return isDarkTheme() ? R.style.DarkAppTheme : R.style.NHIFTHeme;
     }
 
     @StyleRes

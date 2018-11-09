@@ -68,7 +68,7 @@
     <string name="entering_repeat">Add Group</string>
     <string name="entering_repeat_ask">Add New Group?</string>
     <string name="enter_data">Fill Blank Form</string>
-    <string name="enter_data_button">Enrol for NHIF</string>
+    <string name="enter_data_button">Enroll for UHC</string>
     <string name="error_occured">Error Occurred</string>
     <string name="error_attaching_binary_file">An error occurred while attaching the media: %s</string>
     <string name="fetching_file">Getting %1$s.\n\nForm %2$s of %3$s form(s).</string>
@@ -97,7 +97,7 @@
     <string name="load_remote_form_error">Error Getting Form List</string>
     <string name="location_provider_accuracy">Using %1$s. Accuracy is %2$s m.</string>
     <string name="location_accuracy">Accuracy is %1$s m</string>
-    <string name="main_menu">Living Goods Bima Plus</string>
+    <string name="main_menu">UHC</string>
     <string name="main_menu_details">NHIF onboarding made easier…</string>
     <string name="manage_files">Delete Form</string>
     <string name="mark_finished">Mark form as finalized</string>
@@ -126,11 +126,11 @@
     <string name="save_enter_data_description">You are at the end of %s.</string>
     <string name="saving_form">Saving Form</string>
     <string name="sending_items">Sending %1$s of %2$s form(s)</string>
-    <string name="send_data">Send NHIF Form</string>
+    <string name="send_data">Send UHC Form</string>
     <string name="send_data_button">Send Finalized Form (%s)</string>
     <string name="send_selected_data">Send Selected</string>
-    <string name="view_sent_forms">View Form</string>
-    <string name="view_sent_forms_button">View Sent Form (%s)</string>
+    <string name="view_sent_forms">UHC Households</string>
+    <string name="view_sent_forms_button">UHC Households (%s)</string>
     <string name="server_auth_credentials">Invalid username or password for server: %s</string>
     <string name="server_requires_auth">Server Requires Authentication</string>
     <string name="server_url">URL</string>

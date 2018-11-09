@@ -19,6 +19,8 @@ package org.odk.collect.android.activities;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
@@ -26,6 +28,7 @@ import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import org.odk.collect.android.R;
@@ -75,6 +78,18 @@ public class AboutActivity extends CollectAbstractActivity implements
 
         websiteUri = Uri.parse(LG_WEBSITE);
         forumUri = Uri.parse(LG_FORUM);
+
+
+        try {
+            PackageInfo pInfo = this.getPackageManager().getPackageInfo(getPackageName(), 0);
+            String version = pInfo.versionName;
+            int versionCode = pInfo.versionCode;
+
+            TextView tvVersion = (TextView) findViewById(R.id.tv_version);
+            tvVersion.setText(version);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
     }
 
     private void initToolbar() {

@@ -9,5 +9,6 @@
     app:contentInsetEnd="0dp"
     app:contentInsetStart="0dp"
     app:contentInsetStartWithNavigation="0dp"
-    app:navigationIcon="@mipmap/lg_splash"
-    app:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+    app:navigationIcon="@mipmap/ic_launcher"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/Theme.AppCompat.Light.DarkActionBar"/>

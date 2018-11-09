@@ -26,4 +26,13 @@ the License.
     <color name="lightPrimaryTextColor">@android:color/black</color>
     <color name="lightIconColor">@android:color/black</color>
     <color name="lightTintColor">#2196F3</color>
+
+    <!--NHIF Theme-->
+    <color name="primaryColor">#00a0cc</color>
+    <color name="primaryLightColor">#5ed1ff</color>
+    <color name="primaryDarkColor">#00719b</color>
+    <color name="primaryTextColor">#000000</color>
+    <color name="colorAccent">#ff0049</color>
+    <color name="actionbarTextColor">#FFFFFF</color>
+
 </resources>
