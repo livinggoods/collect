@@ -81,12 +81,12 @@ android {
 
     signingConfigs {
         release {
-            if (secrets.getProperty('RELEASE_STORE_FILE')) {
-                storeFile file(secrets.getProperty('RELEASE_STORE_FILE'))
-                storePassword secrets.getProperty('RELEASE_STORE_PASSWORD')
-                keyAlias secrets.getProperty('RELEASE_KEY_ALIAS')
-                keyPassword secrets.getProperty('RELEASE_KEY_PASSWORD')
-            }
+//            if (secrets.getProperty('RELEASE_STORE_FILE')) {
+//                storeFile file(secrets.getProperty('RELEASE_STORE_FILE'))
+//                storePassword secrets.getProperty('RELEASE_STORE_PASSWORD')
+//                keyAlias secrets.getProperty('RELEASE_KEY_ALIAS')
+//                keyPassword secrets.getProperty('RELEASE_KEY_PASSWORD')
+//            }
             keyAlias 'uhc'
             keyPassword '##LGL@18'
             storeFile file('/Users/mwongela/Development/keystore/uhc_nhif')
