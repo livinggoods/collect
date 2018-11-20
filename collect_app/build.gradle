@@ -70,7 +70,7 @@ android {
     defaultConfig {
         applicationId('org.odk.collect.android')
         minSdkVersion(16)
-        targetSdkVersion(22)
+        targetSdkVersion(26)
         versionCode LEGACY_BUILD_NUMBER_OFFSET + getMasterCommitCount()
         versionName getVersionName()
         testInstrumentationRunner('android.support.test.runner.AndroidJUnitRunner')
@@ -79,18 +79,16 @@ android {
         archivesBaseName = 'collect'
     }
 
+    flavorDimensions "uhc"
+
     signingConfigs {
         release {
-//            if (secrets.getProperty('RELEASE_STORE_FILE')) {
-//                storeFile file(secrets.getProperty('RELEASE_STORE_FILE'))
-//                storePassword secrets.getProperty('RELEASE_STORE_PASSWORD')
-//                keyAlias secrets.getProperty('RELEASE_KEY_ALIAS')
-//                keyPassword secrets.getProperty('RELEASE_KEY_PASSWORD')
-//            }
-            keyAlias 'uhc'
-            keyPassword '##LGL@18'
-            storeFile file('/Users/mwongela/Development/keystore/uhc_nhif')
-            storePassword '##LGL@18'
+            if (secrets.getProperty('RELEASE_STORE_FILE')) {
+                storeFile file(secrets.getProperty('RELEASE_STORE_FILE'))
+                storePassword secrets.getProperty('RELEASE_STORE_PASSWORD')
+                keyAlias secrets.getProperty('RELEASE_KEY_ALIAS')
+                keyPassword secrets.getProperty('RELEASE_KEY_PASSWORD')
+            }
         }
     }
 
@@ -104,6 +102,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
             resValue("bool", "FIREBASE_CRASHLYTICS_ENABLED", "false")
         }
+
         // Release build for the original ODK Collect app
         odkCollectRelease {
             if (secrets.getProperty('RELEASE_STORE_FILE')) {
@@ -114,6 +113,9 @@ android {
             resValue("bool", "FIREBASE_CRASHLYTICS_ENABLED", "true")
         }
         debug {
+            if (secrets.getProperty('RELEASE_STORE_FILE')) {
+                signingConfig signingConfigs.release
+            }
             debuggable(true)
             testCoverageEnabled(true)
             resValue("bool", "FIREBASE_CRASHLYTICS_ENABLED", "false")
@@ -164,6 +166,12 @@ android {
                 // it seems any number works, but 1024 - 2048 seem reasonable 
                 maxHeapSize = "2048M"
             }
+        }
+    }
+
+    productFlavors {
+        uhc {
+            applicationId = 'org.livinggoods.tech.uhc'
         }
     }
 }

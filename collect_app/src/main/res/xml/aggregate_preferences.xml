@@ -12,7 +12,8 @@
             android:dialogTitle="@string/change_username"
             android:inputType="textNoSuggestions"
             android:key="username"
-            android:title="@string/username" />
+            android:title="@string/username"
+            />
         <EditTextPreference
             android:dialogTitle="@string/change_password"
             android:inputType="textPassword"
